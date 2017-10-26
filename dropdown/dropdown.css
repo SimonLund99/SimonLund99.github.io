@@ -1,0 +1,24 @@
+#calc {
+    background-color:#50E4FF; /* swag*/
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    #calc {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #35F2F8;
+    }
+    
+    #calc:hover {
+        background-color: #35F2F8;
+        color: white;
+    }

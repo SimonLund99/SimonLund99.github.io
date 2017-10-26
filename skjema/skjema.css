@@ -1,0 +1,12 @@
+body {
+    background: whitesmoke;
+}
+
+#main {
+    font-size: 2.2em;
+    padding: 100px;
+}
+
+#lagre {
+    background: red;
+}

@@ -1,0 +1,56 @@
+#main {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin-left: 10px;
+    border: solid green 2px;
+}
+
+#b1,#b2 {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    /*border: solid green 2px;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+     
+    #hus1,#hus2,#hus3,#hus4 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: solid green 2px;
+    background: blue;
+    }
+     
+    #b1 { right:260px; bottom: 20px; background-image: url(b1.png); }
+    #b2 { left:260px; top: 20px; background-image: url(b2.png); }
+    #hus1 { left:10px; top: 20px; background-image: url(hus1.png);} 
+    #hus2 { left:10px; bottom: 20px; background-image: url(hus2.png);}
+    #hus3 { right:10px; top: 20px; background-image: url(hus3.png);}
+    #hus4 { right:10px; bottom: 20px; background-image: url(hus4.png);}
+
+    #b1 {
+        animation: kjor 2s linear forwards;
+    }
+
+    @keyframes kjor {
+        0% { right: 260px; bottom: 20px; }
+        60% { right: 260px; bottom: 240px; transform: rotate(0deg);}
+        80% { right: 280px; bottom: 290px; }
+        99% { right: 330px; bottom: 320px; transform: rotate(-85deg);}
+        100% { right: 330px; bottom: 320px; transform: rotate(-80deg);}
+    }
+
+    #b2 {
+        animation: kjor2 2s linear forwards;
+    }
+
+    @keyframes kjor2 {
+        0% { left: 260px; top: -200px;}
+        90% {left: 260px; top: 142px;}
+        92% {left: 260px; top: 144px;}
+        95% { left: 260px; top: 175px; }
+        99% {left: 260px; top: 180px; transform: rotate(0deg); }
+        100% {left: 260px; top: 180px; transform: rotate(-5deg);}
+    }

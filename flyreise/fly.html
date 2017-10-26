@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fly.css">
+    <script src="fly.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <form id="skjema">
+            <select id="fra">
+                <option>OSL</option>
+                <option>SVG</option>
+                <option>HAU</option>
+                <option>BGO</option>
+            </select>
+            <select id="til">
+                <option>OSL</option>
+                <option>SVG</option>
+                <option>HAU</option>
+                <option>BGO</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label> Skriv inn antall
+                <input type="number" id="antall">
+            </label>
+            <br>
+            <br>
+            <br>
+            <label> Tur/Retur?
+                <input type="checkbox" id="retur">
+            </label>
+            <label> Trenger du leiebil?
+                <input type="checkbox" id="leiebil">
+            </label>
+            <br>
+            <br>
+            <br>
+            <label>
+                <button id="bestill" type="button">Bestill</button>
+            </label>
+
+        </form>
+
+        <div id="melding">
+
+        </div>
+
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

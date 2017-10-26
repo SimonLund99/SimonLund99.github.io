@@ -1,0 +1,12 @@
+body {
+    background-color: ghostwhite;
+}
+
+#main {
+    background-color: silver;
+    font-size: 2em;
+    padding-left: 10px;
+    padding-top: 25px;
+    padding-bottom: 1px;
+    text-align: center;
+}
