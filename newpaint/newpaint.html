@@ -1,21 +1,24 @@
 <html>
-    
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="newpaint.css">
-        <script src="newpaint.js"></script>
-    </head>
-    
-    <body>
-        <div id="main">
-            <canvas id="tegning" width="500" height="500">
-    
-    
-            </canvas>
-        </div>
-        <script>
-            setup();
-        </script>
-    </body>
-    
-    </html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="newpaint.css">
+    <script src="newpaint.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <input id="size" type="number">
+        <input id="color" type="color">
+        <canvas id="tegning" width="500" height="500"></canvas>
+        <div id="rektangel"></div>
+        <div id="trekant"></div>
+        <div id="sirkel"></div>
+        <div id="visk"></div>
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
