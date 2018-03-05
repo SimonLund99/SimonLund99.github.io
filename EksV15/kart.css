@@ -1,0 +1,61 @@
+#kart {
+    background-image: url("kart.gif");
+    background-position: center;
+    background-size: contain;
+    width: 599px;
+    height: 735px;
+}
+
+#merker {
+    width: 599px;
+    height: 735px;
+    border: solid green 1px;
+}
+
+
+#haldensirkel {
+    position: absolute;
+    left: 340px;
+    top: 600px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: yellow;
+    border: 3px solid red;
+}
+
+#fredrikstadsirkel {
+    position: absolute;
+    left: 160px;
+    top: 510px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: yellow;
+    border: 3px solid red;
+}
+
+#popupfredrikstad,
+#popuphalden {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 4000px;
+    height: 3000px;
+    display: none;
+    background-color: white;
+
+}
+
+#popupfredrikstad.vis,
+#popuphalden.vis {
+    display: block;
+    z-index: 2;
+    border: solid 2px red;
+}
+#popupfredrikstad.skjul,
+#popuphalden.skjul {
+    display: none;
+    z-index: 2;
+    border: solid 2px red;
+}

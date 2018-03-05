@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="prove.css">
+    <script src="prove.js"></script>
+    <title>Prøve</title>
+</head>
+
+<body>
+    <div id="mainen">
+    <div id="main">
+        <div id="selg">
+            Navn:
+            <input id="navn" type="text">
+            <br> Hva selger du?
+            <input id="ting" type="text">
+            <br> Antall:
+            <input id="antall" type="number">
+            <br> Pris:
+            <input id="pris" type="number"> (Pris for alle)
+            <br>
+            <button id="lagre">Legg ut for salg</button>
+            <br>
+        </div>
+        <p>US seller? Please convert USD to NOK:</p>
+        <form id="konverter">
+                <label>USD: <input id="usd" type="number"
+                    oninput="usdConverter(this.value)"
+                    onchange="usdConverter(this.value)" placeholder="usd"> </label>
+                <button id="usd2nok" type="button"> &#x2199; </button><br>
+                <p>Nok:
+                <span id="outputNok"></span></p>
+        <div id="annonse">
+        <div id="tekst">Fly billigere med AirFly</div>
+        </div>
+        <div id="fly"></div>
+    </div>
+
+
+    </div>
+    <script>
+        setup();
+        function usdConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputNok").innerHTML = valNum * 7.8;
+      }
+    </script>
+</body>
+
+</html>

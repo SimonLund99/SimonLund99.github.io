@@ -1,0 +1,28 @@
+#main {
+    background-color: lightblue;
+    position: absolute;
+}
+#annonse {
+    position: absolute;
+    background-image: url(skybanneren.png);
+    margin-top: 30px;
+    top: 200px;
+    width: 600px;
+    height: 100px;
+    font-size: 3em;
+}
+#fly {
+    position: absolute;
+    animation: kjor 5s linear forwards infinite;
+    background-image: url(flyet.png);
+    left: 500px;
+    top: 250px;
+    height: 30px;
+    width: 100px;
+    z-index: 10;
+}
+
+@keyframes kjor {
+    0% {left: 500px; }
+    100% {left: 0px; }
+}

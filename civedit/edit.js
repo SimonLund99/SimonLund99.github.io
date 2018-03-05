@@ -1,3 +1,47 @@
+
+class Perk {
+    constructor(perks) {
+        this.economy = perks.economy;
+        this.military = perks.military;
+        this.society = perks.society;
+    }
+
+    render() {
+        let s = `
+        <ul>
+            <li>Economy: ${this.economy}
+            <li>Military: ${this.military}
+            <li>Society: ${this.society}
+        </ul>
+        `;
+    }
+}
+
+
+class Nation {
+    constructor(navn, info) {
+        this.navn = navn;
+        this.title = info.title;
+        this.leader = info.leader;
+        this.capital = info.capital;
+        this.picture = info.picture;
+    }
+    render() {
+        let s = `
+    <ul>
+        <li>Name: ${this.navn}
+        <li>Leader: ${this.title} ${this.leader}
+        <li>Capital: ${this.capital}
+        <li>Picture: <img src="${this.navn}">
+        <li>Perks: ${this.perk.render()}
+    </ul>
+    `;
+        return s;
+
+    }
+}
+
+
 function setup() {
     // Initialize Firebase
     var config = {

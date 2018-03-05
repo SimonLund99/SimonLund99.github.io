@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalender</title>
+    <link rel="stylesheet" href="kalender.css">
+    <script src="kalender.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="buttons">
+            <!-- buttons
+            <button type="button" class="mybutton" id="-,year"> &lt; </button>
+            <button type="button" class="mybutton" id="+,year"> &gt; </button>
+            <button type="button" class="mybutton" id="-,monthN"> &lt; </button>
+            <button type="button" class="mybutton" id="+,monthN"> &gt; </button>
+        </div>
+
+        <!-- text display
+        <div class="mytext" id="year">2015</div>
+        <div class="mytext" id="month">oktober</div>
+
+        <!-- navn paa ukedager
+        <div id="ukedager"></div>
+
+        <!-- rammen rundt datoer (1..31)
+        <div id="datoer"></div>
+
+        <!-- en liten editor
+        <div id="tinyed"></div>
+    </div>
+    <script>
+        // start script som tegner calendar
+        setup();
+    </script>
+</body>
+
+</html>
+-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalender</title>
+    <link rel="stylesheet" href="kalender.css">
+    <script src="kalender.js"></script>
+</head>
+
+<body>
+    <div id="kalender">
+        <div class="navigation">
+            <button id="prevYear"> &lt; </button>
+            <span id="year">2018</span>
+            <button id="nextYear"> &gt;</button>
+        </div>
+        <div class="navigation">
+            <button id="prevMonth"> &lt; </button>
+            <span id="month">Februar</span>
+            <button id="nextMonth"> &gt;</button>
+        </div>
+        <div id="moonbox">
+            <div id="ukedager"></div>
+            <div id="datoer"></div>
+        </div>
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

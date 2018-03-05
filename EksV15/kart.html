@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="kart.css">
+    <script src="kart.js"></script>
+    <title>Sykkeltur</title>
+</head>
+<body>
+    <div id="overskrift">
+        <h1>Velg reisemål</h1>
+    </div>
+    <div id="kart">
+      <div id="merker"></div>
+        <div id="haldensirkel" class="sirkel"></div>
+        <div id="fredrikstadsirkel" class="sirkel"></div>
+    </div>
+    <div id="popuphalden">
+        <video preload="preload"  id="video1" controls loop="loop" x-webkit-airplay="allow"  >
+            <source src="halden.mp4" type="video/webm"></source>
+        </video>
+    </div>
+    <div id="popupfredrikstad">
+        <video preload="preload"  id="video2" controls loop="loop">
+            <source src="fredrikstad.mp4" type="video/webm"></source>
+        </video>
+    </div>
+    <script>
+      setup();
+    </script>
+</body>
+</html>
