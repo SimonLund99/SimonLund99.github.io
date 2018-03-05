@@ -21,7 +21,7 @@ class SalgbarTing extends Salg { //utvidelse av klassen Salg
 
     // hva koster en enhet av denne tingen
     enhetspris() {
-        return this.pris * this.antall;
+        return this.pris / this.antall;
     }
 
     // selg tingen
@@ -52,12 +52,17 @@ function setup() {
         let pris = inpPris.valueAsNumber;
         console.log(navn, ting, antall, pris);
         if (navn && ting && antall && pris) {
-            let newObj = new SalgbarTing(navn, ting, antall, pris);
+            let newObj = new SalgbarTing(navn, ting, antall, pris); //lager nytt objekt, salgbarting
             tingTilSalgs.push(newObj);
             console.log(tingTilSalgs);
-            alert("Du har lagt ut annonsen");
+            alert("Du har lagt ut annonsen"); //en melding om at annonsen er publisert
+        }
+        for (let ting of tingTilSalgs) {
+            console.log("Enhetsprisen er: " + (ting.enhetspris()).toFixed(2)); //legger ut enhetspris
         }
     }
+
+
 
 
 }
